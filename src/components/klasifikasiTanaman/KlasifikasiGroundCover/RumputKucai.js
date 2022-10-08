@@ -9,7 +9,7 @@ function BasicExample() {
     <div className="row">
               <div className="col-md-6">
                 <div className="single-image">
-                <img src="/images/GroundCover/Kucai.jpg" width={'262px'} height={'196px'} alt="Third slide "
+                <img src="/images/GroundCover/kucai.jpg" width={'262px'} height={'196px'} alt="Third slide "
                 />
                 </div>
               </div>
