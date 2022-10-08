@@ -17,7 +17,7 @@ function BasicExample() {
     
     
     <Card style={{ width: '18rem' }}>
-    <img src="/images/GroundCover/KacangKacangan.jpg" width={'262px'} height={'196px'} alt="Third slide "
+    <img src="/images/GroundCover/kacangkacangan.jpg" width={'262px'} height={'196px'} alt="Third slide "
                 />
       <Card.Body>
         <Card.Title>Kacang-Kacangan</Card.Title>
@@ -29,7 +29,7 @@ function BasicExample() {
     </Card>
     <Card style={{ width: '18rem' }}>
     <img     
- src="/images/GroundCover/Kucai.jpg"
+ src="/images/GroundCover/kucai.jpg"
  width={'262px'} height={'196px'}
 alt="Third slide"
                 />
