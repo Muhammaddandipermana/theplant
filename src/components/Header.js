@@ -354,6 +354,8 @@ const Header = () => {
               </form>
             </div>
             <br></br>
+            <div className="d-flex justify-content-center">
+            <br></br>
             <Link to="/ShopSection">
             <Button variant="success" >Tanaman Langka</Button>{' '}
             </Link >
@@ -371,6 +373,7 @@ const Header = () => {
             <Link to="/Rumput">
             <Button variant="success">Rumput</Button>{' '}
             </Link>
+              </div>
           </div>
 
           {/* PC HEADER */}
