@@ -29,7 +29,7 @@ function BasicExample() {
     </Card>
     <Card style={{ width: '18rem' }}>
     <img     
- src="/images/SemakRendah/KupingGajah.jpg"
+ src="/images/SemakRendah/kupinggajah.jpg"
  width={'262px'} height={'196px'}
 alt="Third slide"
                 />
@@ -44,7 +44,7 @@ alt="Third slide"
     </Card>
     <Card style={{ width: '18rem' }}>
     <img     
- src="/images/SemakRendah/Keningkir.jpg"
+ src="/images/SemakRendah/keningkir.jpg"
  width={'262px'} height={'196px'}
 alt="Third slide"
                 />
@@ -58,7 +58,7 @@ alt="Third slide"
     </Card>
     <Card style={{ width: '18rem' }}>
     <img     
- src="/images/SemakRendah/TapakDara.jpg"
+ src="/images/SemakRendah/tapakdara.jpg"
  width={'262px'} height={'196px'}
 alt="Third slide"
                 />
