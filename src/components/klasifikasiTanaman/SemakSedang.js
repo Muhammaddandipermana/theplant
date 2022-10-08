@@ -29,7 +29,7 @@ function BasicExample() {
     </Card>
     <Card style={{ width: '18rem' }}>
     <img     
- src="/images/semakSedang/melati.jpg"
+ src="/images/SemakSedang/melati.jpg"
  width={'262px'} height={'196px'}
 alt="Third slide"
                 />
