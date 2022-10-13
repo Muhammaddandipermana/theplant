@@ -85,7 +85,7 @@ const SingleProduct = ({ history, match }) => {
                     <div className="flex-box d-flex justify-content-between align-items-center">
                       <h6>Status</h6>
                       {product.countInStock > 0 ? (
-                        <span>In Stock</span>
+                        <span>Tersedia</span>
                       ) : (
                         <span>unavailable</span>
                       )}
