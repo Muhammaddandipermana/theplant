@@ -352,9 +352,12 @@ const Header = () => {
                   search
                 </button>
               </form>
-            </div>         
+            </div>
             <br></br>
             <Link to="/ShopSection">
+            <Button variant="success" >Beli Tanaman</Button>{' '}
+            </Link >
+            <Link to="/TanamanLlangka">
             <Button variant="success" >Tanaman Langka</Button>{' '}
             </Link >
             <Link to="/Pohon">
@@ -630,6 +633,9 @@ const Header = () => {
             <div className="d-flex justify-content-center">
             <br></br>
             <Link to="/ShopSection">
+            <Button variant="success" >Beli Tanaman</Button>{' '}
+            </Link >
+            <Link to="/TanamanLlangka">
             <Button variant="success" >Tanaman Langka</Button>{' '}
             </Link >
             <Link to="/Pohon">
