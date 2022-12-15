@@ -5,6 +5,7 @@ import { ORDER_CREATE_RESET } from "../Redux/Constants/OrderConstants";
 import Header from "./../components/Header";
 import Message from "./../components/LoadingError/Error";
 import {Nav} from "react-bootstrap";
+import Accordion from 'react-bootstrap/Accordion';
 
 
 const PlaceOrderScreen = ({ history }) => {
@@ -46,6 +47,49 @@ const PlaceOrderScreen = ({ history }) => {
     <>
       <Header />
       <div className="container">
+        
+
+        <div className="row order-products justify-content-between">
+          <div className="col-lg-8">
+            {cart.cartItems.length === 0 ? (
+              <Message variant="alert-info mt-5">Your cart is empty</Message>
+            ) : (
+              <>
+                {cart.cartItems.map((item, index) => (
+                  <div className="order-product row" key={index}>
+                    <div className="col-md-3 col-6">
+                      <img src={item.image} alt={item.name} />
+                    </div>
+                    <div className="col-md-5 col-6 d-flex align-items-center">
+                      <Link to={`/products/${item.product}`}>
+                        <h6>{item.name}</h6>
+                      </Link>
+                    </div>
+                    <div className="mt-3 mt-md-0 col-md-2 col-6  d-flex align-items-center flex-column justify-content-center ">
+                      <h4>Jumlah</h4>
+                      <h6>{item.qty}</h6>
+                    </div>
+                    <div className="mt-3 mt-md-0 col-md-2 col-6 align-items-end  d-flex flex-column justify-content-center ">
+                      <h4>SUBTOTAL</h4>
+                      <h6>Rp.{item.qty * item.price}</h6>
+                    </div>
+                  </div>
+                ))}
+              </>
+            )}
+          </div>
+          {/* total */}
+          <div className="col-lg-3 d-flex align-items-end flex-column mt-5 subtotal-order">
+          <Accordion className="d-flex justify-content-center">
+      <Accordion.Item alwaysOpen>
+        <Accordion.Header >Catatan</Accordion.Header>
+        <Accordion.Body>
+        {cart.shippingAddress.catatan}
+        </Accordion.Body>
+      </Accordion.Item>
+    </Accordion>         
+          </div>
+        </div>
         <div className="row  order-detail">
           <div className="col-lg-4 col-sm-4 mb-lg-4 mb-5 mb-sm-0">
             <div className="row ">
@@ -101,39 +145,8 @@ const PlaceOrderScreen = ({ history }) => {
             </div>
           </div>
         </div>
-
-        <div className="row order-products justify-content-between">
-          <div className="col-lg-8">
-            {cart.cartItems.length === 0 ? (
-              <Message variant="alert-info mt-5">Your cart is empty</Message>
-            ) : (
-              <>
-                {cart.cartItems.map((item, index) => (
-                  <div className="order-product row" key={index}>
-                    <div className="col-md-3 col-6">
-                      <img src={item.image} alt={item.name} />
-                    </div>
-                    <div className="col-md-5 col-6 d-flex align-items-center">
-                      <Link to={`/products/${item.product}`}>
-                        <h6>{item.name}</h6>
-                      </Link>
-                    </div>
-                    <div className="mt-3 mt-md-0 col-md-2 col-6  d-flex align-items-center flex-column justify-content-center ">
-                      <h4>Jumlah</h4>
-                      <h6>{item.qty}</h6>
-                    </div>
-                    <div className="mt-3 mt-md-0 col-md-2 col-6 align-items-end  d-flex flex-column justify-content-center ">
-                      <h4>SUBTOTAL</h4>
-                      <h6>Rp.{item.qty * item.price}</h6>
-                    </div>
-                  </div>
-                ))}
-              </>
-            )}
-          </div>
-          {/* total */}
-          <div className="col-lg-3 d-flex align-items-end flex-column mt-5 subtotal-order">
-            <table className="table table-bordered">
+        <br></br>
+        <table className="table table-bordered">
               <tbody>
                 <tr>
                   <td>
@@ -166,9 +179,6 @@ const PlaceOrderScreen = ({ history }) => {
                 Bayar
               </button></Nav.Link>
       </Nav.Item>
-            
-          </div>
-        </div>
       </div>
     </>
   );
