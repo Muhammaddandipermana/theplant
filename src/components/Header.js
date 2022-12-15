@@ -55,7 +55,7 @@ const Header = () => {
                       <Nav.Link to="">
                         <i className="fab fa-linkedin-in"></i>
                       </Nav.Link>
-                      <Nav.Link to="">
+                      <Nav.Link href="https://youtube.com/@rtxyami530">
                         <i className="fab fa-youtube"></i>
                       </Nav.Link>
                       <Nav.Link href="https://youtube.com/@rtxyami530">
