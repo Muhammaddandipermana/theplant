@@ -42,25 +42,25 @@ const Header = () => {
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
-                  <Nav.Link href="#home">Home</Nav.Link>
-                  <Nav.Link href="#link">Contact</Nav.Link>
+                  <Nav.Link href="https://theplant.vercel.app/">Home</Nav.Link>
+                  <Nav.Link href="https://wa.me/6289627706016">Contact</Nav.Link>
                   <NavDropdown title="Social Media" id="basic-nav-dropdown">
-                    <div className=" col-12 col-lg-6 justify-content-center justify-content-lg-end d-flex align-items-center">
-                      <Link to="">
+                    <div className="justify-content-center justify-content-lg-end d-flex align-items-center">
+                      <Nav.Link href="https://m.facebook.com/100006825333146/">
                         <i className="fab fa-facebook-f"></i>
-                      </Link>
-                      <Link to="">
+                      </Nav.Link>
+                      <Nav.Link href="https://www.instagram.com/muhammaddandipermana/followers/">
                         <i className="fab fa-instagram"></i>
-                      </Link>
-                      <Link to="">
+                      </Nav.Link>
+                      <Nav.Link to="">
                         <i className="fab fa-linkedin-in"></i>
-                      </Link>
-                      <Link to="">
+                      </Nav.Link>
+                      <Nav.Link to="">
                         <i className="fab fa-youtube"></i>
-                      </Link>
-                      <Link to="">
+                      </Nav.Link>
+                      <Nav.Link href="https://youtube.com/@rtxyami530">
                         <i className="fab fa-pinterest-p"></i>
-                      </Link>
+                      </Nav.Link>
                     </div>
                   </NavDropdown>
                 </Nav>
