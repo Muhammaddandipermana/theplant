@@ -339,8 +339,7 @@ const Header = () => {
                 </Carousel.Caption>
               </Carousel.Item>
             </Carousel>
-            <br />
-            <div className="col-12 d-flex align-items-center">
+            {/* <div className="col-12 d-flex align-items-center">
               <form onSubmit={submitHandler} className="input-group">
                 <input
                   type="search"
@@ -352,7 +351,7 @@ const Header = () => {
                   search
                 </button>
               </form>
-            </div>
+            </div> */}
             <br></br>
             <Link to="/ShopSection">
             <Button variant="success" >Beli Tanaman</Button>{' '}
@@ -384,7 +383,7 @@ const Header = () => {
                   <img alt="logo" src="/images/logotheplant.png" />
                 </Link>
               </div>
-              <div className="col-md-6 col-8 d-flex align-items-center">
+              {/* <div className="col-md-6 col-8 d-flex align-items-center">
                 <form onSubmit={submitHandler} className="input-group">
                   <input
                     type="search"
@@ -396,8 +395,8 @@ const Header = () => {
                     search
                   </button>
                 </form>
-              </div>
-              <div className="col-md-3 d-flex align-items-center justify-content-end Login-Register">
+              </div> */}
+              <div className="col-9 d-flex align-items-center justify-content-end Login-Register">
                 {userInfo ? (
                   <div className="btn-group">
                     <button
